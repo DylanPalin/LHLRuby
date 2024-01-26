@@ -12,7 +12,6 @@ class Players
   end
 end
 
-# Player.rb
 class Player
   attr_accessor :lives
 
@@ -34,4 +33,3 @@ class Player
     @lives -= 1
   end
 end
-# Path: rubyTheHardWay/myStuff/Players.rb

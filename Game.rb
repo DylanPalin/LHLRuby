@@ -1,18 +1,18 @@
 class Game
   attr_accessor :players, :current_player
-
+  
   def initialize(players)
     @players = players
     @current_player = players.first
   end
-
+  
   def generate_question
     num1 = rand(1..20)
     num2 = rand(1..20)
     puts "#{@current_player.name}: what does #{num1} plus #{num2} equal?"
     return num1 + num2
   end
-
+  
   def play_turn
     answer = generate_question
     player_answer = gets.chomp.to_i
